@@ -4,13 +4,8 @@ alot about the flow of a program and simple debugging.
 """
 
 import random
+from enemy import Enemy
 
-class Enemy:
-    def __init__(self, health, shield_range):
-        self.health = health
-        self.shield = random.randint(shield_range[0], shield_range[1])
-    def destroy_enemy(self):
-        print("Enemy Destroyed")
 
 def main():
     player_attack = (1, 4)
